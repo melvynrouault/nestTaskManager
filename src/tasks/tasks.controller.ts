@@ -33,7 +33,7 @@ export class TasksController {
   }
 
   @Patch(':id')
-  updateOneTask(@Body()updateSTatusDto: UpdateStatusDto): Task[] {
+  updateOneTask(@Body()updateSTatusDto: UpdateStatusDto): Task {
     return this.taskService.updateOneTask(updateSTatusDto);
   }
 }
